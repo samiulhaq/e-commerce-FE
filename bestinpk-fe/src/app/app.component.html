@@ -26,24 +26,25 @@
   </span>
 </mat-toolbar>
 <mat-toolbar>
-    
-    <button mat-button 
-        [matMenuTriggerFor]="menu" 
-        #menuTrigger="matMenuTrigger" 
-        (mouseenter)="menuTrigger.openMenu()">
-      Menu
+
+    <button mat-button
+        [matMenuTriggerFor]="menu"
+        #menuTrigger="matMenuTrigger"
+
+    >
+      Menu <i class="material-icons">keyboard_arrow_down</i>
     </button>
 
     <mat-menu #menu="matMenu" [overlapTrigger]="false">
-      <div (mouseleave)="menuTrigger.closeMenu()">
+      <div >
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </div>
     </mat-menu>
 
-    <button mat-button 
-        [matMenuTriggerFor]="menuTwo" 
-        #menuTwoTrigger="matMenuTrigger" 
+    <button mat-button
+        [matMenuTriggerFor]="menuTwo"
+        #menuTwoTrigger="matMenuTrigger"
         (mouseenter)="menuTwoTrigger.openMenu()">
       Menu Two
     </button>
@@ -56,6 +57,39 @@
     </mat-menu>
 
 </mat-toolbar>
+<mat-toolbar>
+
+  <div class="test">
+    <button mat-button>
+      test
+    </button>
+    <div class="show-this">
+asssdasdddddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddddddddd
+    </div>
+  </div>
+
+  <div class="test">
+    <button mat-button>
+      test
+    </button>
+    <div class="show-this">
+      <div class="button-row">
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+        <button mat-raised-button color="accent">Accent</button>
+        <button mat-raised-button color="warn">Warn</button>
+        <button mat-raised-button disabled>Disabled</button>
+        <a mat-raised-button routerLink=".">Link</a>
+      </div>
+    </div>
+  </div>
 
 
-  
+
+
+
+
+
+</mat-toolbar>
+
+
