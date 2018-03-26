@@ -1,26 +1,61 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mat-toolbar color="primary">
+  <span>BestInPk</span>
 
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+  <!-- This fills the remaining space of the current row -->
+  <span class="search-box">
+      <div class="search-container" fxShow.xs="false">
+        <input placeholder="Search, discover, explore...">
+        <i class="material-icons">search</i>
+      </div>
+  </span>
 
+  <span >
+    <div class="button-row">
+      <button mat-raised-button color="warn">
+        <mat-icon class="material-icons">shopping_cart</mat-icon>
+        <span fxShow.xs="false">Cart (3) - ₹16,640.00</span>
+        <span fxShow.xs="true" fxShow.sm="true" fxShow.md="false" fxShow.lg="false" fxShow.xl="false">(3)</span>
+      </button>
+      <button mat-raised-button color="accent">
+        <mat-icon class="material-icons">fingerprint</mat-icon>
+        <span fxShow.xs="false">Login / Signup</span>
+      </button>
+    </div>
+
+  </span>
+</mat-toolbar>
+<mat-toolbar>
+    
+    <button mat-button 
+        [matMenuTriggerFor]="menu" 
+        #menuTrigger="matMenuTrigger" 
+        (mouseenter)="menuTrigger.openMenu()">
+      Menu
+    </button>
+
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <div (mouseleave)="menuTrigger.closeMenu()">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </div>
+    </mat-menu>
+
+    <button mat-button 
+        [matMenuTriggerFor]="menuTwo" 
+        #menuTwoTrigger="matMenuTrigger" 
+        (mouseenter)="menuTwoTrigger.openMenu()">
+      Menu Two
+    </button>
+
+    <mat-menu #menuTwo="matMenu" [overlapTrigger]="false">
+      <div (mouseleave)="menuTwoTrigger.closeMenu()">
+        <button mat-menu-item>Item 3</button>
+        <button mat-menu-item>Item 4</button>
+      </div>
+    </mat-menu>
+
+</mat-toolbar>
+
+
+  
