@@ -30,23 +30,19 @@
     top: 6px;
 }
 
-.test {
-
-}
-
-.show-this {
+.sub-nav {
   width: auto;
   height: 0;
-  background: #ececec;
+  background: #323232;
   position: absolute;
   overflow: hidden;
   transition: all 0.5s;
-
 }
 
-.test:hover .show-this {
-  height: 50px;
-  padding: 10px;
+.nav-item:hover .sub-nav {
+  height: auto;
+  padding: 25px;
+  z-index: 1;
 }
 
 
