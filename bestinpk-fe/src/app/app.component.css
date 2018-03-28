@@ -42,7 +42,7 @@
 .nav-item:hover .sub-nav {
   height: auto;
   padding: 25px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .products-listing {

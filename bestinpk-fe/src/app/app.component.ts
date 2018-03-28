@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	  testMenu() {
-	  	console.log('test');
-	  //  this.trigger.closeMenu();
-	  }
-
-
-
 }
