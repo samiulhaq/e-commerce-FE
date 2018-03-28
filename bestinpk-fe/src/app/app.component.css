@@ -46,24 +46,11 @@
 }
 
 .products-listing {
-  padding: 0 16px;
+  padding-left: 20px;
 }
 
-.page-head {
-  display: flex;
-  align-items: center;
-}
-
-.page-head h1, .page-head .filters {
-  flex: 1;
-}
-
-.page-head .filters {
-  text-align: right;
-}
-
-.page-head .filters span, .page-head .filters .button-row {
-  display: inline-flex;
+.product-each {
+  margin-bottom: 20px;
 }
 
 
