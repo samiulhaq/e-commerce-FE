@@ -4,13 +4,12 @@
 
   <!-- This fills the remaining space of the current row -->
   <span class="search-box">
-      <div class="search-container" fxShow.xs="false">
-        <input placeholder="Search, discover, explore...">
-        <i class="material-icons">search</i>
-      </div>
+    <div class="search-container" fxShow.xs="false">
+      <input placeholder="Search, discover, explore...">
+      <i class="material-icons">search</i>
+    </div>
   </span>
-
-  <span >
+  <span>
     <div class="button-row">
       <button mat-raised-button color="warn">
         <mat-icon class="material-icons">shopping_cart</mat-icon>
@@ -22,55 +21,80 @@
         <span fxShow.xs="false">Login / Signup</span>
       </button>
     </div>
-
   </span>
 </mat-toolbar>
 
-<mat-toolbar>
-  <div class="nav-item">
-    <button mat-button>
-      test
-    </button>
-    <div class="sub-nav">
+<nav fxHide.lt-lg="true">
+  <mat-toolbar>
+    <div class="nav-item">
+      <button mat-button>
+        test
+      </button>
+      <div class="sub-nav">
+          <div class="button-row">
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button>Basic</button>
+            <button mat-raised-button>Basic</button>
+          </div>
+      </div>
+    </div>
+    <div class="nav-item">
+      <button mat-button>
+        test
+      </button>
+      <div class="sub-nav">
         <div class="button-row">
           <button mat-raised-button>Basic</button>
           <button mat-raised-button>Basic</button>
           <button mat-raised-button>Basic</button>
           <button mat-raised-button>Basic</button>
           <button mat-raised-button>Basic</button>
+          <button mat-raised-button>Basic</button>
+          <button mat-raised-button>Basic</button>
         </div>
-    </div>
-  </div>
-  <div class="nav-item">
-    <button mat-button>
-      test
-    </button>
-    <div class="sub-nav">
-      <div class="button-row">
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button>Basic</button>
       </div>
     </div>
-  </div>
-  <div class="nav-item">
-    <button mat-button color="warn">
-      Deals
-    </button>
-  </div>
-</mat-toolbar>
-
+    <div class="nav-item">
+      <button mat-button color="warn">
+        Deals
+      </button>
+    </div>
+  </mat-toolbar>
+</nav>
+<!--Off Canvas Menu Content Starts-->
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <button mat-button (click)="sidenav.toggle()"><i class="material-icons">close</i></button>
+    <div fxLayout="column">
+      <button mat-button (click)="sidenav.toggle()">
+        <i class="material-icons">keyboard_arrow_left</i> Back
+      </button>
+    </div>
+    <mat-list>
+     <mat-list-item>
+       <button mat-button [matMenuTriggerFor]="menu">test</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+     </mat-list-item>
+     
+     <mat-list-item> Salt </mat-list-item>
+     <mat-list-item> Paprika </mat-list-item>
+    </mat-list>
   </mat-sidenav>
+<!--Off Canvas Menu Content Ends-->
 
   <mat-sidenav-content>
-    <button mat-button (click)="sidenav.toggle()"><i class="material-icons">menu</i> Menu</button>
+    <div class="hamburger" fxHide.gt-md="true">
+      <mat-toolbar>
+        <button mat-button (click)="sidenav.toggle()">
+          <i class="material-icons">menu</i> Menu
+        </button>
+      </mat-toolbar>      
+    </div>
+
     <div class="products-listing" [ngStyle.xs]="{'padding-left' : '0'}">
       <div class="page-head" fxLayout="row wrap" fxLayoutAlign="center center" fxLayout.xs="column">
         <h1 fxFlex="20%">Home</h1>
