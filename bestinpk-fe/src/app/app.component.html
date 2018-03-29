@@ -1,101 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar color="primary">
-  <span>BestInPk</span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="search-box">
-    <div class="search-container" fxShow.xs="false">
-      <input placeholder="Search, discover, explore...">
-      <i class="material-icons">search</i>
-    </div>
-  </span>
-  <span>
-    <div class="button-row">
-      <button mat-raised-button color="warn">
-        <mat-icon class="material-icons">shopping_cart</mat-icon>
-        <span fxHide fxShow.gt-md="true">Cart (3) - ₹16,640.00</span>
-        <span fxShow.xs="true" fxShow.gt-md="false">(3)</span>
-      </button>
-      <button mat-raised-button color="accent">
-        <mat-icon class="material-icons">fingerprint</mat-icon>
-        <span fxShow.xs="false">Login / Signup</span>
-      </button>
-    </div>
-  </span>
-</mat-toolbar>
-
-<nav fxHide.lt-lg="true">
-  <mat-toolbar>
-    <div class="nav-item">
-      <button mat-button>
-        test
-      </button>
-      <div class="sub-nav">
-          <div class="button-row">
-            <button mat-raised-button>Basic</button>
-            <button mat-raised-button>Basic</button>
-            <button mat-raised-button>Basic</button>
-            <button mat-raised-button>Basic</button>
-            <button mat-raised-button>Basic</button>
-          </div>
-      </div>
-    </div>
-    <div class="nav-item">
-      <button mat-button>
-        test
-      </button>
-      <div class="sub-nav">
-        <div class="button-row">
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-          <button mat-raised-button>Basic</button>
-        </div>
-      </div>
-    </div>
-    <div class="nav-item">
-      <button mat-button color="warn">
-        Deals
-      </button>
-    </div>
-  </mat-toolbar>
-</nav>
+<app-header></app-header>
+<app-nav></app-nav>
 <!--Off Canvas Menu Content Starts-->
 <mat-sidenav-container>
-  <mat-sidenav #sidenav>
-    <div fxLayout="column">
-      <button mat-button (click)="sidenav.toggle()">
-        <i class="material-icons">keyboard_arrow_left</i> Back
-      </button>
-    </div>
-    <div layout="row" layout-align="start center" flex>
-      <button mat-button>
-        Deals
-      </button>
-    </div>
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Personal data
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Self aware panel
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-    </mat-accordion>
-
-  </mat-sidenav>
+  <app-nav-mobile></app-nav-mobile>
 <!--Off Canvas Menu Content Ends-->
 
   <mat-sidenav-content>
@@ -104,7 +11,7 @@
         <button mat-button (click)="sidenav.toggle()">
           <i class="material-icons">menu</i> Menu
         </button>
-      </mat-toolbar>      
+      </mat-toolbar>
     </div>
 
     <div class="products-listing" [ngStyle.xs]="{'padding-left' : '0'}">

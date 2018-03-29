@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <span>BestInPk</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="search-box">
+    <div class="search-container" fxShow.xs="false">
+      <input placeholder="Search, discover, explore...">
+      <i class="material-icons">search</i>
+    </div>
+  </span>
+  <span>
+    <div class="button-row">
+      <button mat-raised-button color="warn">
+        <mat-icon class="material-icons">shopping_cart</mat-icon>
+        <span fxHide fxShow.gt-md="true">Cart (3) - ₹16,640.00</span>
+        <span fxShow.xs="true" fxShow.gt-md="false">(3)</span>
+      </button>
+      <button mat-raised-button color="accent">
+        <mat-icon class="material-icons">fingerprint</mat-icon>
+        <span fxShow.xs="false">Login / Signup</span>
+      </button>
+    </div>
+  </span>
+</mat-toolbar>

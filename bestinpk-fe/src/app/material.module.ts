@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatExpansionModule, MatIconModule, MatGridListModule, MatInputModule, MatListModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatExpansionModule,
+          MatIconModule, MatGridListModule, MatInputModule, MatListModule, MatCardModule } from '@angular/material';
 
 
 

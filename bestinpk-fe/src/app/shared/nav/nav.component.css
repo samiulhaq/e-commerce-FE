@@ -1,0 +1,14 @@
+.sub-nav {
+  width: auto;
+  height: 0;
+  background: #323232;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.nav-item:hover .sub-nav {
+  height: auto;
+  padding: 25px;
+  z-index: 2;
+}
