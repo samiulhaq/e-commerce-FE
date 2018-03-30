@@ -1,21 +1,21 @@
 <app-header></app-header>
 <app-nav></app-nav>
 <!--Off Canvas Menu Content Starts-->
-<mat-sidenav-container>
-  <app-nav-mobile></app-nav-mobile>
+<mat-drawer-container>
+<app-nav-mobile></app-nav-mobile>
 <!--Off Canvas Menu Content Ends-->
 
-  <mat-sidenav-content>
     <div class="hamburger" fxHide.gt-md="true">
       <mat-toolbar>
-        <button mat-button (click)="sidenav.toggle()">
+        <button mat-button (click)="toggleMobileSidenav()">
           <i class="material-icons">menu</i> Menu
         </button>
       </mat-toolbar>
     </div>
     <app-home></app-home>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+
+</mat-drawer-container>
+
 
 
 

@@ -1,6 +1,6 @@
-<mat-sidenav #sidenav>
+<mat-drawer #sidenav>
   <div fxLayout="column">
-    <button mat-button (click)="sidenav.toggle()"  class="mobile-nav-link back-btn">
+    <button mat-button class="mobile-nav-link back-btn" (click)="close()">
       <i class="material-icons">keyboard_arrow_left</i> Back
     </button>
     <button mat-button class="mobile-nav-link">
@@ -35,4 +35,4 @@
     </mat-expansion-panel>
   </mat-accordion>
 
-</mat-sidenav>
+</mat-drawer>
