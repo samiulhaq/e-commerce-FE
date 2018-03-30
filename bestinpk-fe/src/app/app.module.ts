@@ -14,6 +14,7 @@ import { NavComponent } from './shared/nav/nav.component';
 import { NavMobileComponent } from './shared/nav-mobile/nav-mobile.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavService } from './services/sidenav.service';
+import { FiltersComponent } from './shared/filters/filters.component';
 
 
 
@@ -27,7 +28,8 @@ import { SidenavService } from './services/sidenav.service';
     FooterComponent,
     NavComponent,
     NavMobileComponent,
-    HomeComponent
+    HomeComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
