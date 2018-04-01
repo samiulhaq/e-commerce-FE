@@ -1,38 +1,27 @@
-<mat-drawer #sidenav>
-  <div fxLayout="column">
-    <button mat-button class="mobile-nav-link back-btn" (click)="close()">
-      <i class="material-icons">keyboard_arrow_left</i> Back
-    </button>
-    <button mat-button class="mobile-nav-link">
-      Deals
-    </button>
-  </div>
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Personal data
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <a mat-button routerLink=".">Link</a>
-      <a mat-button routerLink=".">Link</a>
-      <a mat-button routerLink=".">Link</a>
-      <a mat-button routerLink=".">Link</a>
-      <a mat-button routerLink=".">Link</a>
-      <a mat-button routerLink=".">Link</a>
-    </mat-expansion-panel>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Self aware panel
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div fxLayout="column">
-        <a mat-button class="mobile-nav-link" routerLink=".">Link This</a>
-        <a mat-button class="mobile-nav-link" routerLink=".">Dry Fruits</a>
-        <a mat-button class="mobile-nav-link" routerLink=".">Peshawari Chappal</a>
-      </div>
-    </mat-expansion-panel>
-  </mat-accordion>
-
-</mat-drawer>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <a mat-button routerLink=".">Link</a>
+    <a mat-button routerLink=".">Link</a>
+    <a mat-button routerLink=".">Link</a>
+    <a mat-button routerLink=".">Link</a>
+    <a mat-button routerLink=".">Link</a>
+    <a mat-button routerLink=".">Link</a>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="column">
+      <a mat-button class="mobile-nav-link" routerLink=".">Link This</a>
+      <a mat-button class="mobile-nav-link" routerLink=".">Dry Fruits</a>
+      <a mat-button class="mobile-nav-link" routerLink=".">Peshawari Chappal</a>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

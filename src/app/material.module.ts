@@ -9,6 +9,7 @@ import { MatButtonModule, MatMenuModule, MatToolbarModule, MatSidenavModule, Mat
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
+    MatIconModule,
     MatGridListModule,
     MatInputModule,
     MatListModule,
