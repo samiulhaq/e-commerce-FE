@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppMaterialModule } from './material.module';
+import { AppRoutingModule }        from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './account/login/login.component';
@@ -35,6 +37,7 @@ import { FiltersComponent } from './shared/filters/filters.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppMaterialModule,
+    AppRoutingModule,
     FlexLayoutModule
   ],
   providers: [SidenavService],
