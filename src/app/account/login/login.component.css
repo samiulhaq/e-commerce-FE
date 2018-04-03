@@ -1,8 +1,38 @@
-.example-container {
-  display: flex;
-  flex-direction: column;
+.login-container {
+	margin-top: 4%;
 }
 
-.example-container > * {
-  width: 100%;
+.login-container mat-form-field {
+	margin-bottom: 40px;
+}
+
+.btn-login {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.fb-login {
+	background: #1565c0;
+	color: #fff;
+}
+
+.google-login {
+	background: #d84315;
+}
+
+.twitter-login {
+	background: #2996f3;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.social-login {
+	margin-top: 10px;
 }

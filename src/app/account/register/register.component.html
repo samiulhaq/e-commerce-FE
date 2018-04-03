@@ -1,3 +1,45 @@
-<p>
-  register works!
-</p>
+<div class="register-container" fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25">
+  <h1>Register</h1>
+	<div class="links-to" fxLayout="row" fxLayout.lt-md="column" fxFlexAlign="center center">
+	    <div class="register-link" fxFlex="50" fxFlex.lt-md="100" fxLayout="row" fxFlexAlign="center center">
+	      <span fxFlexAlign="center">Already have an account?</span>
+	      <span>
+	        <button mat-button color="primary" routerLink="/login">Login <i class="material-icons">arrow_forward</i></button>
+	      </span>
+	    </div>    
+  	</div>
+
+  	<mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Last name">
+    </mat-form-field>
+
+	<mat-form-field>
+		<input matInput placeholder="Enter your email" [formControl]="email" required>
+		<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+	</mat-form-field>
+
+	<mat-form-field>
+		<input matInput placeholder="Choose your password" [type]="showPassword ? 'password' : 'text'">
+		<mat-icon matSuffix (click)="showPassword = !showPassword">{{showPassword ? 'visibility' : 'visibility_off'}}</mat-icon>
+	</mat-form-field>
+
+	<mat-form-field>
+		<input matInput placeholder="Re-enter your password" [type]="hide ? 'password' : 'text'">
+		<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+	</mat-form-field>
+
+  	<button mat-raised-button class="btn-login" color="primary">Submit</button> 
+  	<mat-divider></mat-divider>
+  	<h4>Signup with:</h4>
+  	<mat-divider></mat-divider>
+  	<div class="social-login" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="10px" fxFlexAlign="center center">
+  		<button class="fb-login" fxFlex='0 1 calc(33% - 10px)' mat-raised-button>Facebook</button>
+		<button class="google-login" fxFlex='0 1 calc(33% + 10px)' mat-raised-button color="primary">Google</button>
+		<button class="twitter-login" fxFlex='0 1 calc(33% - 10px)' mat-raised-button color="accent">Twitter</button>
+  	</div>
+	
+</div>
