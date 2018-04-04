@@ -5,3 +5,7 @@
 .product-each {
   margin-bottom: 20px;
 }
+
+.mat-card-image {
+	height: 389px;
+}
