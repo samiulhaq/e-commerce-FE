@@ -1,24 +1,17 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
-import { SidenavService } from '../../services/sidenav.service';
-import { MatSidenav } from '@angular/material';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav-mobile',
   templateUrl: './nav-mobile.component.html',
   styleUrls: ['./nav-mobile.component.css']
 })
-export class NavMobileComponent implements OnInit {
-  @ViewChild('sidenav') public sidenav: MatSidenav;
+export class NavMobileComponent {
 
-  constructor(private sidenavService: SidenavService) {	}
+
+  constructor() {}
 
   ngOnInit(): void {
-   // console.log(this.sidenav);
-    this.sidenavService.setSidenav(this.sidenav);
-  }
 
-  public close() {
-    return this.sidenavService.close();
   }
 
 }
