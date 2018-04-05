@@ -1,5 +1,6 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,8 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('sidenav')
-  private sidenav: ElementRef;
+ 
+ @ViewChild('sidenav') sidenav : MatSidenav;
 
   constructor(private router: Router) {
     this.router.events.subscribe(val => {
@@ -17,4 +18,5 @@ export class AppComponent {
       }
     });
   }
+  
 }
