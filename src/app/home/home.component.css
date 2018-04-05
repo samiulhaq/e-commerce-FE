@@ -8,4 +8,6 @@
 
 .mat-card-image {
 	height: 389px;
+	cursor: pointer;
+	outline: none;
 }

@@ -1,90 +1,103 @@
 <div class="products-listing" [ngStyle.xs]="{'padding-left' : '0'}">
+  
+  <!--Start Snackbar when Product added to cart takes values from here-->
+  <div style="display:none">
+    <mat-form-field>
+      <input matInput value="Disco party!" placeholder="Message" #message>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput value="Dance" placeholder="Action" #action>
+    </mat-form-field>
+  </div>
+  <!--End Snackbar when Product added to cart take values from here-->
+
   <div class="page-head" fxLayout="row wrap" fxLayout.xs="column">
     <h1 fxFlex="20%" fxLayoutAlign.xs="center center">Home</h1>
     <app-filters fxFlex='0 1 calc(80% - 20px)' fxLayoutAlign="end center"></app-filters>
   </div>
   <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px" >
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test.jpg">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Fur Dark Brown</span>
         <span>Rs. 7,200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)" ><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test2.jpg">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test2.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Ghazni Brown</span>
         <span>Rs. 7,200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test.jpg">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Light Tan Slim</span>
         <span>Rs. 7,200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test2.jpg">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test2.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Vibram Texture Brown</span>
         <span>Rs. 7,200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test.jpg" alt="Photo of a Shiba Inu">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test.jpg" alt="Photo of a Shiba Inu">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>SUMMER TIME BEACH</span>
         <span>Rs. 7,200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+      <img routerLink="/product-detail" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Donald Casual Chair</span>
         <span>Rs. 200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="product-each" fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFlex.md='0 1 calc(50% - 20px)'>
-      <img mat-card-image src="assets/product-images/test.jpg">
+      <img routerLink="/product-detail" mat-card-image src="assets/product-images/test.jpg">
       <mat-card-content fxLayout="row" fxLayoutAlign="space-between center">
         <span>Ghazni Brown</span>
         <span>Rs. 1200</span>
       </mat-card-content>
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button><i class="material-icons">remove_red_eye</i> View</button>
-        <button mat-button><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
+        <button mat-button routerLink="/product-detail"><i class="material-icons">remove_red_eye</i> View</button>
+        <button mat-button (click)="openSnackBar(message.value, action.value)"><i class="material-icons">add_shopping_cart</i> Add To Cart</button>
       </mat-card-actions>
     </mat-card>
   </div>
