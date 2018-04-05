@@ -1,5 +1,5 @@
 .login-container {
-	margin-top: 4%;
+	margin-top: 2%;
 }
 
 .login-container mat-form-field {
@@ -37,3 +37,5 @@ h4 {
 	margin-top: 10px;
   margin-bottom: 30px;
 }
+
+:host { position: relative !important; }

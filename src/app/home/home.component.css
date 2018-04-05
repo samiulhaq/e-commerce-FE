@@ -11,3 +11,5 @@
 	cursor: pointer;
 	outline: none;
 }
+
+:host { position: relative !important; }
