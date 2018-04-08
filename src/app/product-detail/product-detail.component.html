@@ -1,11 +1,12 @@
 <div fxLayout="row" fxLayout.lt-lg="column"  fxLayoutAlign.lt-lg="space-around stretch"  fxLayoutAlign="space-around center" fxLayoutGap="20px">
 	<div fxFlex='0 1 calc(50% - 20px)' style="background: red">
 		<div class="main-image">
+			<img [imageZoom]="imageSource1" lensStyle="LENS" lensWidth="200" lensHeight="200" [src]="imageSource1">
 		</div>
 		<div class="thumbnails">
 		</div>sdfs
 	</div>
 	<div fxFlex='0 1 calc(50% - 20px)' style="background: green">
-		asdas
+		<img [imageZoom]="imageSource2" [src]="imageSource2" [style.width.px]="300" [style.height.px]="300">
 	</div>
 </div>
