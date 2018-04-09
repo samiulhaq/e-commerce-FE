@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppMaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
-import { ImageZoomModule } from 'angular2-image-zoom';
 
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -44,8 +43,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     BrowserAnimationsModule,
     AppMaterialModule,
     AppRoutingModule,
-    FlexLayoutModule,
-    ImageZoomModule
+    FlexLayoutModule
   ],
   providers: [SidenavService],
   bootstrap: [AppComponent]
