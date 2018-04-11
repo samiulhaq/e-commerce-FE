@@ -1,8 +1,57 @@
-<div fxLayout="row" fxLayout.lt-lg="column"  fxLayoutAlign.lt-lg="space-around stretch"  fxLayoutAlign="space-around center" fxLayoutGap="20px">
-	<div fxFlex='0 1 calc(50% - 20px)' style="background: red">
-		<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+<div fxLayout="row" class="product-detail" fxLayout.lt-lg="column"  fxLayoutAlign.lt-lg="space-around stretch" fxLayoutGap="20px">
+	<div fxFlex='0 1 calc(50% - 20px)'>
+		<mat-card>
+			<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+		</mat-card>
+		
 	</div>
-	<div fxFlex='0 1 calc(50% - 20px)' style="background: green">
-
+	<div fxFlex='0 1 calc(50% - 20px)'>
+		<mat-card>
+		  <mat-card-header>
+		    <mat-card-title class="product-name">Ghazni Brown</mat-card-title>
+		    <mat-card-subtitle class="product-price">Rs 2,400</mat-card-subtitle>
+		  </mat-card-header>
+		  <div fxLayout="row">
+  			<mat-form-field fxFlex>
+		    	<mat-select placeholder="Select One">
+				    <mat-option *ngFor="let option of options" [value]="option.value">
+				      {{ option.viewValue }}
+				    </mat-option>
+		  		</mat-select>
+				</mat-form-field>
+  			</div>
+			<mat-card-actions class="add-btn" fxLayout="row">
+				<button fxFlex mat-raised-button color="primary">ADD TO CART</button>
+			</mat-card-actions>
+		  	<mat-card-content>
+			    <p>
+			      The Kolachi Kurta Collection combines the age old tradition of a brightly dyed kameez with a plain and elegant white shalwar. Staying true to our endeavor for  premium fabric we have used high quality yarn dyed cotton and paired it with a soft white cotton shalwar
+			    </p>
+			    <p>
+			      Refreshing to the eyes and cool to the touch.
+			    </p>
+			    <mat-list role="list" class="features">
+				  <mat-list-item role="listitem"><strong>Type:</strong>Regular Fit</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Fit:</strong>Regular</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Fabric:</strong>Stretch</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Color:</strong>Blue</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Wash Care:</strong>Dry Clean Any SolvenNormal 40?c Do Not Bleach Warm Iron Dry Clean-F</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Style:</strong>Solid</mat-list-item>
+  				  <mat-list-item role="listitem"><strong>Model Stats:</strong>This model has height 6'4",Chest 38",Waist 31"and is Wearing Size 32.</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Size:</strong>4.5 x 1.5 Meters Full Suit.</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Contact:</strong>0315-1503888</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Limited Stock - Order Now Above !</strong></mat-list-item>
+				  <mat-list-item role="listitem"><strong>Free Delivery</strong>- For Pakistan in 2-4 days.</mat-list-item>
+				  <mat-list-item role="listitem"><strong>Warranty:</strong></mat-list-item>
+				  <mat-list-item role="listitem">
+				  		<mat-list role="list">
+				  			<mat-list-item role="listitem">Free replacement incase of any issue.</mat-list-item>
+				  			<mat-list-item role="listitem">Free refund if you do not like the product.</mat-list-item>
+			  			</mat-list>
+				  </mat-list-item>
+				</mat-list>
+		  </mat-card-content>
+		  
+		</mat-card>
 	</div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../router.animations';
+import {FormControl} from '@angular/forms';
 
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
@@ -12,16 +13,22 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 })
 
 export class ProductDetailComponent implements OnInit {
-
-galleryOptions: NgxGalleryOptions[];
+	myControl: FormControl = new FormControl();
+	galleryOptions: NgxGalleryOptions[];
     galleryImages: NgxGalleryImage[];
+    options = [
+	    {value: 'steak-0', viewValue: 'Steak'},
+	    {value: 'pizza-1', viewValue: 'Pizza'},
+	    {value: 'tacos-2', viewValue: 'Tacos'}
+	   ];
+
  
     ngOnInit(): void {
  
         this.galleryOptions = [
             {
-                width: '600px',
-                height: '400px',
+                width: '100%',
+                height: '600px';
                 thumbnailsColumns: 4,
                 previewCloseOnClick: true, 
                 previewCloseOnEsc: true,
@@ -33,7 +40,7 @@ galleryOptions: NgxGalleryOptions[];
                 arrowPrevIcon: "fa fa-angle-left fa-2x",
                 imageArrowsAutoHide: true, 
                 thumbnailsArrowsAutoHide: true,
-                imageInfinityMove: true
+                imageInfinityMove: true,
             },
             // max-width 800
             {
