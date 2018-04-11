@@ -1,3 +1,14 @@
+<!--Start Snackbar when Product added to cart takes values from here-->
+  <div style="display:none">
+    <mat-form-field>
+      <input matInput value="Disco party!" placeholder="Message" #message>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput value="Dance" placeholder="Action" #action>
+    </mat-form-field>
+  </div>
+  <!--End Snackbar when Product added to cart take values from here-->
 <div fxLayout="row" class="product-detail" fxLayout.lt-lg="column"  fxLayoutAlign.lt-lg="space-around stretch" fxLayoutGap="20px">
 	<div fxFlex='0 1 calc(50% - 20px)'>
 		<mat-card>
@@ -20,8 +31,17 @@
 		  		</mat-select>
 				</mat-form-field>
   			</div>
+  			<div fxLayout="row">
+  			<mat-form-field fxFlex>
+		    	<mat-select placeholder="Size">
+				    <mat-option *ngFor="let option of options" [value]="option.value">
+				      {{ option.viewValue }}
+				    </mat-option>
+		  		</mat-select>
+				</mat-form-field>
+  			</div>
 			<mat-card-actions class="add-btn" fxLayout="row">
-				<button fxFlex mat-raised-button color="primary">ADD TO CART</button>
+				<button (click)="openSnackBar(message.value, action.value)" fxFlex mat-raised-button color="primary">ADD TO CART</button>
 			</mat-card-actions>
 		  	<mat-card-content>
 			    <p>

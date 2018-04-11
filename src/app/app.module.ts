@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { SidenavService } from './services/sidenav.service';
 import { FiltersComponent } from './shared/filters/filters.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -36,7 +37,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     NavMobileComponent,
     HomeComponent,
     FiltersComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

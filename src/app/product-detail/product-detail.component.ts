@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 import { routerTransition } from '../router.animations';
 import {FormControl} from '@angular/forms';
 
@@ -21,6 +22,16 @@ export class ProductDetailComponent implements OnInit {
 	    {value: 'pizza-1', viewValue: 'Pizza'},
 	    {value: 'tacos-2', viewValue: 'Tacos'}
 	   ];
+
+
+  	constructor(public snackBar: MatSnackBar) { }
+	openSnackBar(message: string, action: string) {
+	    this.snackBar.open(message, action, {
+	      duration: 2000,
+	      verticalPosition: 'top',
+	      horizontalPosition: 'right',
+	    });
+  	}
 
  
     ngOnInit(): void {
