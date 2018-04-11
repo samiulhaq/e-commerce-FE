@@ -1,22 +1,2 @@
 :host { position: relative !important; }
 
-.main-image {
-	text-align:center;
-}
-
-.main-image img {
-	max-width: 100%
-}
-
-.thumbnails {
-	padding-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.thumbnails img {
-	width: 80px;
-	height: 80px;
-	display: inline-block;
-	margin-right: 10px;
-}
