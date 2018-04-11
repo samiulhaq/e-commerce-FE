@@ -28,7 +28,7 @@ export class ProductDetailComponent implements OnInit {
         this.galleryOptions = [
             {
                 width: '100%',
-                height: '600px';
+                height: '600px',
                 thumbnailsColumns: 4,
                 previewCloseOnClick: true, 
                 previewCloseOnEsc: true,
@@ -46,7 +46,7 @@ export class ProductDetailComponent implements OnInit {
             {
                 breakpoint: 800,
                 width: '100%',
-
+                height: '400px',
                 imagePercent: 80,
                 thumbnailsPercent: 20,
                 thumbnailsMargin: 20,
