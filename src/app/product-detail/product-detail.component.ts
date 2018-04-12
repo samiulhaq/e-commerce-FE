@@ -10,7 +10,7 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 	templateUrl: './product-detail.component.html',
 	styleUrls: ['./product-detail.component.css'],
 	animations: [routerTransition()],
-  	host: {'[@routerTransition]': ''}
+  host: {'[@routerTransition]': ''}
 })
 
 export class ProductDetailComponent implements OnInit {
@@ -25,7 +25,7 @@ export class ProductDetailComponent implements OnInit {
 
 
   	constructor(public snackBar: MatSnackBar) { }
-	openSnackBar(message: string, action: string) {
+	  openSnackBar(message: string, action: string) {
 	    this.snackBar.open(message, action, {
 	      duration: 500,
 	      verticalPosition: 'top',
@@ -33,15 +33,15 @@ export class ProductDetailComponent implements OnInit {
 	    });
   	}
 
- 
+
     ngOnInit(): void {
- 
+
         this.galleryOptions = [
             {
                 width: '100%',
                 height: '600px',
                 thumbnailsColumns: 4,
-                previewCloseOnClick: true, 
+                previewCloseOnClick: true,
                 previewCloseOnEsc: true,
                 previewZoom: true,
                 imageSwipe: true,
@@ -49,7 +49,7 @@ export class ProductDetailComponent implements OnInit {
                 previewSwipe: true,
                 arrowNextIcon: "fa fa-angle-right fa-2x",
                 arrowPrevIcon: "fa fa-angle-left fa-2x",
-                imageArrowsAutoHide: true, 
+                imageArrowsAutoHide: true,
                 thumbnailsArrowsAutoHide: true,
                 imageInfinityMove: true,
             },
@@ -69,7 +69,7 @@ export class ProductDetailComponent implements OnInit {
                 preview: false
             }
         ];
- 
+
         this.galleryImages = [
             {
                 small: 'assets/product-images/test4.jpeg',

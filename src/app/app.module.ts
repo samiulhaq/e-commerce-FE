@@ -22,6 +22,7 @@ import { SidenavService } from './services/sidenav.service';
 import { FiltersComponent } from './shared/filters/filters.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -38,7 +39,8 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     FiltersComponent,
     ProductDetailComponent,
-    CartComponent
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
