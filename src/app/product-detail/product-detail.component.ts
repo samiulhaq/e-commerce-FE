@@ -27,7 +27,7 @@ export class ProductDetailComponent implements OnInit {
   	constructor(public snackBar: MatSnackBar) { }
 	openSnackBar(message: string, action: string) {
 	    this.snackBar.open(message, action, {
-	      duration: 2000,
+	      duration: 500,
 	      verticalPosition: 'top',
 	      horizontalPosition: 'right',
 	    });

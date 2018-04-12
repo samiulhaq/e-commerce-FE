@@ -8,7 +8,16 @@ import { routerTransition } from '../router.animations';
 	animations: [routerTransition()],
   	host: {'[@routerTransition]': ''}
 })
+
 export class CartComponent implements OnInit {
+
+  	foods = [
+	    {value: '1', viewValue: '1'},
+	    {value: '2', viewValue: '2'},
+	    {value: '3', viewValue: '3'}
+	  ];
+
+  	selectedValue: string = this.foods[0].value;
 
   constructor() { }
 
