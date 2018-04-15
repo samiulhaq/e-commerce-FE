@@ -1,1 +1,19 @@
 :host { position: relative !important; }
+
+.step-container {
+	margin-top: 2%;
+}
+
+.step-container mat-form-field {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.btn-submit {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	width: 100%
+}

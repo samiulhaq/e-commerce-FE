@@ -1,15 +1,52 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper" fxHide.xs>
   <mat-step [stepControl]="firstFormGroup">
+  <div class="step-container" fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25">
     <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Shipping</ng-template>
       <mat-form-field>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        <input matInput placeholder="First name" [formControl]="firstName" required>
+        <mat-error *ngIf="firstName.hasError('required')">
+          Please enter your first name
+        </mat-error>
+
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Last name" [formControl]="lastName" required>
+        <mat-error *ngIf="lastName.hasError('required')">
+           Please enter your last name
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="City" [formControl]="cityName" required>
+        <mat-error *ngIf="cityName.hasError('required')">
+          Please enter your city
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="State" [formControl]="stateName" required>
+        <mat-error *ngIf="stateName.hasError('required')">
+          Please enter your state
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matTextareaAutosize matAutosizeMinRows="2" matInput placeholder="Complete street address" [formControl]="streetName" required></textarea>
+        <mat-error *ngIf="stateName.hasError('required')">
+          Please enter your address
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <span matPrefix>+92 &nbsp;</span>
+        <input maxlength="11" type="tel" matInput placeholder="Telephone" [formControl]="phNo" required (keydown)="check($event)">
+        <mat-error *ngIf="phNo.hasError('required')">
+          Please enter your number
+        </mat-error>
       </mat-form-field>
       <div>
-        <button mat-button matStepperNext>Next</button>
+        <button class="btn-submit" color="primary" mat-raised-button matStepperNext>Next</button>
       </div>
     </form>
-  </mat-step>
+</div>
+</mat-step>
   <mat-step [stepControl]="secondFormGroup" optional>
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Fill out your address</ng-template>
@@ -33,7 +70,7 @@
 </mat-horizontal-stepper>
 
 
-<mat-vertical-stepper>
+<mat-vertical-stepper fxHide.gt-xs>
   <mat-step label="Shipping">
     Content 1
   </mat-step>
