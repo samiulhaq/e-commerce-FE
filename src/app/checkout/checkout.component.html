@@ -60,7 +60,7 @@
   <mat-step>
     <ng-template matStepLabel>Place Order</ng-template>
     <div fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25" style="margin-top: 50px;">
-      <button mat-raised-button color="primary">CONFIRM</button>
+      <button mat-raised-button color="primary" routerLink="/thank-you">CONFIRM</button>
     </div>
   </mat-step>
 </mat-horizontal-stepper>
@@ -128,7 +128,7 @@
   <mat-step>
     <ng-template matStepLabel>Place Order</ng-template>
     <div>
-      <button class="btn-submit" color="primary" mat-raised-button matStepperNext>CONFIRM</button>
+      <button class="btn-submit" routerLink="/thank-you" color="primary" mat-raised-button matStepperNext>CONFIRM</button>
     </div>
   </mat-step>
 </mat-vertical-stepper>

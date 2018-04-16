@@ -23,6 +23,7 @@ import { FiltersComponent } from './shared/filters/filters.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 
 
@@ -40,7 +41,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FiltersComponent,
     ProductDetailComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
