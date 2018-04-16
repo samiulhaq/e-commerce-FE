@@ -15,12 +15,12 @@ export class CheckoutComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  firstName = new FormControl ();
-  lastName = new FormControl();
-  cityName = new FormControl ();
-  stateName = new FormControl();
-  streetName = new FormControl();
-  phNo = new FormControl();
+  get firstName() { return this.firstFormGroup.get('firstName'); };
+  get lastName() { return this.firstFormGroup.get('lastName'); };
+  get cityName() { return this.firstFormGroup.get('cityName'); };
+  get stateName() { return this.firstFormGroup.get('stateName'); };
+  get streetName() { return this.firstFormGroup.get('streetName'); };
+  get phNo() { return this.firstFormGroup.get('phNo'); };
 
   allowedChars = new Set('0123456789'.split('').map(c => c.charCodeAt(0)));
 
@@ -44,7 +44,7 @@ export class CheckoutComponent implements OnInit {
       phNo: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+
     });
   }
 
