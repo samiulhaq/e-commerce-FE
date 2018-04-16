@@ -1,0 +1,11 @@
+:host { position: relative !important; }
+
+.thank-you {
+  min-height: 400px;
+  text-align: center;
+  margin-top: 30px;
+  color: #05C675;
+  padding: 20px;
+  line-height: 2;
+  font-weight: 600;
+}
