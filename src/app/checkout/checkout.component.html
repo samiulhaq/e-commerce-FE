@@ -50,7 +50,7 @@
   <mat-step [stepControl]="secondFormGroup" optional>
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Payment Method (Cash on delivery)</ng-template>
-      <p>*Currently we do not accept any online payment. You can pay us while you receive your order.</p>
+      <p>Currently we do not accept any online payment. You can pay us while you receive your order.</p>
       <div>
         <button color="primary" mat-raised-button matStepperPrevious>Back</button>
         <button color="primary" mat-raised-button matStepperNext>Next</button>
@@ -60,6 +60,7 @@
   <mat-step>
     <ng-template matStepLabel>Place Order</ng-template>
     <div fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25" style="margin-top: 50px;">
+      <p>Please press the button below to confirm you order.</p>
       <button mat-raised-button color="primary" routerLink="/thank-you">CONFIRM</button>
     </div>
   </mat-step>
@@ -118,7 +119,7 @@
   <mat-step [stepControl]="secondFormGroup" optional>
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Payment Method (Cash on delivery)</ng-template>
-        <p>*Currently we do not accept any online payment. You can pay us while you receive your order.</p>
+        <p>Currently we do not accept any online payment. You can pay us while you receive your order.</p>
       <div>
         <button mat-raised-button color="primary" matStepperPrevious>Back</button>
         <button mat-raised-button color="primary" matStepperNext>Next</button>
@@ -128,6 +129,7 @@
   <mat-step>
     <ng-template matStepLabel>Place Order</ng-template>
     <div>
+      <p>Please press the button below to confirm you order.</p>
       <button class="btn-submit" routerLink="/thank-you" color="primary" mat-raised-button matStepperNext>CONFIRM</button>
     </div>
   </mat-step>
