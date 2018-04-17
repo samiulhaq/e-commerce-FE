@@ -3,13 +3,13 @@ import { NavigationStart, Router } from '@angular/router';
 import { MatSidenav } from '@angular/material';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-site-layout',
+  templateUrl: './site-layout.component.html',
+  styleUrls: ['./site-layout.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class SiteLayoutComponent implements OnInit {
 
-   @ViewChild('sidenav') sidenav : MatSidenav;
+	@ViewChild('sidenav') sidenav : MatSidenav;
 
   constructor(private router: Router) {
     this.router.events.subscribe(val => {

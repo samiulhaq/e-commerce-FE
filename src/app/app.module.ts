@@ -10,8 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgxGalleryModule } from 'ngx-gallery';
 import 'hammerjs';
 
-import { HeaderComponent } from './shared/_layouts/site-header/header.component';
-import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.component';
+import { UserLayoutComponent } from './shared/_layouts/user-layout/user-layout.component';
+import { SiteLayoutComponent } from './shared/_layouts/site-layout/site-layout.component';
 
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
@@ -27,8 +27,10 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-
-
+import { SiteHeaderComponent } from './shared/_layouts/site-header/site-header.component';
+import { SiteFooterComponent } from './shared/_layouts/site-footer/site-footer.component';
+import { UserFooterComponent } from './shared/_layouts/user-footer/user-footer.component';
+import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.component';
 
 
 @NgModule({
@@ -37,7 +39,6 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    HeaderComponent,
     FooterComponent,
     NavComponent,
     NavMobileComponent,
@@ -48,7 +49,12 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     CheckoutComponent,
     ThankYouComponent,
     UserHeaderComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SiteHeaderComponent,
+    SiteFooterComponent,
+    UserFooterComponent,
+    UserLayoutComponent,
+    SiteLayoutComponent
   ],
   imports: [
     BrowserModule,

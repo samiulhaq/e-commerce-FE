@@ -1,8 +1,8 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HeaderComponent } from './shared/_layouts/site-header/header.component';
-import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.component';
+import { UserLayoutComponent } from './shared/_layouts/user-layout/user-layout.component';
+import { SiteLayoutComponent } from './shared/_layouts/site-layout/site-layout.component';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './account/login/login.component';
@@ -19,7 +19,7 @@ const routes: Routes = [
   
  { 
     path: '', 
-    component: HeaderComponent,
+    component: SiteLayoutComponent,
     children: [
       { path: '', component: HomeComponent, pathMatch: 'full'},
       { path: 'home', component: HomeComponent },
@@ -35,7 +35,7 @@ const routes: Routes = [
 
    { 
     path: '', 
-    component: UserHeaderComponent,
+    component: UserLayoutComponent,
     children: [
       { path: 'user-profile', component: UserProfileComponent },
     ]

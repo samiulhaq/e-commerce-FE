@@ -35,15 +35,6 @@
   top: 6px;
 }
 
-.back-btn {
-  padding: 0 15px;
-  text-align: right;
-}
-
-.mat-drawer-container {
-  background: transparent;
-}
-
 @media screen and (max-width: 900px) and (min-width: 599px) {
   .search-container {
     width: 96%;
