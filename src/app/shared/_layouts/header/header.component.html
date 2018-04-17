@@ -22,3 +22,31 @@
     </div>
   </span>
 </mat-toolbar>
+<app-nav></app-nav>
+<!--Mobile sidenav trigger-->
+<div class="hamburger" fxHide.gt-md="true">
+  <mat-toolbar>
+    <button mat-button (click)="sidenav.toggle()">
+      <i class="material-icons">menu</i> Menu
+    </button>
+  </mat-toolbar>
+</div>
+
+<mat-sidenav-container>
+  <!--Mobile sidenav-->
+  <mat-sidenav #sidenav mode="push">
+    <!--mobile-nav back btn-->
+    <div fxLayout="column">
+      <button mat-button class="mobile-nav-link back-btn" (click)="sidenav.close()">
+        <i class="material-icons">keyboard_arrow_left</i> Back
+      </button>
+    </div>
+    <!--mobile-nav content-->
+    <app-nav-mobile></app-nav-mobile>
+  </mat-sidenav>
+  <!--Main Pages content-->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -13,7 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { ForgotPasswordComponent } from './account/forgot-password/forgot-password.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { HeaderComponent } from './shared/_layouts/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { NavMobileComponent } from './shared/nav-mobile/nav-mobile.component';
