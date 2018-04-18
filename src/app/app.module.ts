@@ -16,7 +16,6 @@ import { SiteLayoutComponent } from './shared/_layouts/site-layout/site-layout.c
 import { LoginComponent } from './account/login/login.component';
 import { RegisterComponent } from './account/register/register.component';
 import { ForgotPasswordComponent } from './account/forgot-password/forgot-password.component';
-import { FooterComponent } from './shared/footer/footer.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { NavMobileComponent } from './shared/nav-mobile/nav-mobile.component';
 import { HomeComponent } from './home/home.component';
@@ -39,7 +38,6 @@ import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.c
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    FooterComponent,
     NavComponent,
     NavMobileComponent,
     HomeComponent,
