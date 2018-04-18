@@ -1,8 +1,22 @@
 import {trigger, state, animate, style, transition} from '@angular/animations';
 
 export function routerTransition() {
-  return slideToLeft();
+  return fadeIn();
 }
+
+function fadeIn() {
+  return trigger('routerTransition', [
+        transition(':enter', [
+
+            // styles at start of transition
+            style({ opacity: 0 }),
+
+            // animation and styles at end of transition
+            animate('0.3s', style({ opacity: 1 }))
+        ]),
+  ]);
+}
+
 
 function slideToRight() {
   return trigger('routerTransition', [
