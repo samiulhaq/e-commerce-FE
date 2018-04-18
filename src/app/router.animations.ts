@@ -12,7 +12,7 @@ function fadeIn() {
             style({ opacity: 0 }),
 
             // animation and styles at end of transition
-            animate('0.3s', style({ opacity: 1 }))
+            animate('0.5s ease-in-out', style({ opacity: 1 }))
         ]),
   ]);
 }
