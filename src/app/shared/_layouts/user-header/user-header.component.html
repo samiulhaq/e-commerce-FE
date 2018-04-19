@@ -1,3 +1,28 @@
 <mat-toolbar color="primary">
-  <span class="logo" routerLink="/home">BestInPk</span>
+  	<div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="100%">
+  		<div>
+  			<span class="logo" routerLink="/home">BestInPk</span>
+  		</div>
+  		<div>
+  			<button mat-button [matMenuTriggerFor]="menu" yPosition="below">
+  				<mat-icon>account_circle</mat-icon> 
+  				Sami Ulhaq
+  				<mat-icon>keyboard_arrow_down</mat-icon>
+			</button>
+			<mat-menu #menu="matMenu">
+			  <button mat-menu-item>
+			    <mat-icon>settings</mat-icon>
+			    <span>Account Settings</span>
+			  </button>
+			  <button mat-menu-item>
+			    <mat-icon>add_shopping_cart</mat-icon>
+			    <span>Orders</span>
+			  </button>
+			  <button mat-menu-item>
+			    <mat-icon>power_settings_new</mat-icon>
+			    <span>Logout</span>
+			  </button>
+			</mat-menu>
+  		</div>
+	</div>
 </mat-toolbar>
