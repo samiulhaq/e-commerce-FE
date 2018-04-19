@@ -30,6 +30,10 @@ import { SiteHeaderComponent } from './shared/_layouts/site-header/site-header.c
 import { SiteFooterComponent } from './shared/_layouts/site-footer/site-footer.component';
 import { UserFooterComponent } from './shared/_layouts/user-footer/user-footer.component';
 import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.component';
+import { UserNavComponent } from './shared/user-nav/user-nav.component';
+import { UserShippingAddressComponent } from './user-shipping-address/user-shipping-address.component';
+import { UserOrdersComponent } from './user-orders/user-orders.component';
+import { UserOrderDetailComponent } from './user-order-detail/user-order-detail.component';
 
 
 @NgModule({
@@ -52,7 +56,11 @@ import { UserHeaderComponent } from './shared/_layouts/user-header/user-header.c
     SiteFooterComponent,
     UserFooterComponent,
     UserLayoutComponent,
-    SiteLayoutComponent
+    SiteLayoutComponent,
+    UserNavComponent,
+    UserShippingAddressComponent,
+    UserOrdersComponent,
+    UserOrderDetailComponent
   ],
   imports: [
     BrowserModule,

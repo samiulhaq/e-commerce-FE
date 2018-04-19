@@ -7,8 +7,6 @@
 }
 
 .mat-card-image {
-	cursor: pointer;
-	outline: none;
+  cursor: pointer;
+  outline: none;
 }
-
-:host { position: relative !important; }

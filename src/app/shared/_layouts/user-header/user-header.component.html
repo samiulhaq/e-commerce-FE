@@ -5,23 +5,27 @@
   		</div>
   		<div>
   			<button mat-button [matMenuTriggerFor]="menu" yPosition="below">
-  				<mat-icon>account_circle</mat-icon> 
+  				<mat-icon>account_circle</mat-icon>
   				Sami Ulhaq
   				<mat-icon>keyboard_arrow_down</mat-icon>
 			</button>
 			<mat-menu #menu="matMenu">
-			  <button mat-menu-item>
+			  <button mat-menu-item routerLink="/user-profile">
 			    <mat-icon>settings</mat-icon>
-			    <span>Account Settings</span>
+			    <span>Personal information</span>
 			  </button>
-			  <button mat-menu-item>
+        <button mat-menu-item routerLink="/user-shipping-address">
+          <mat-icon>local_shipping</mat-icon>
+          <span>Shipping address</span>
+        </button>
+			  <button mat-menu-item routerLink="/user-orders">
 			    <mat-icon>add_shopping_cart</mat-icon>
-			    <span>Orders</span>
+			    <span>Track orders</span>
 			  </button>
-			  <button mat-menu-item>
-			    <mat-icon>power_settings_new</mat-icon>
-			    <span>Logout</span>
-			  </button>
+        <button mat-menu-item>
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Logout</span>
+        </button>
 			</mat-menu>
   		</div>
 	</div>

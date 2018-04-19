@@ -1,0 +1,70 @@
+<div class="my-orders" fxFlex="99.5" fxFlexOffset=".25">
+  <mat-card>
+    <div fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap.xs="20px">
+      <h1>My Orders</h1>
+      <app-filters fxFlex='0 1 calc(80% - 20px)' fxLayoutAlign="end center"></app-filters>
+    </div>
+    <div class="orders-data">
+      <table>
+        <thead>
+        <th>No.</th>
+        <th>Order Date</th>
+        <th>Order ID</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>View</th>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            29 Aug 2018
+          </td>
+          <td>
+            234
+          </td>
+          <td>Rs. 102,399</td>
+          <td>Shipped</td>
+          <td>
+            <a mat-icon-button routerLink="/user-order-detail">
+              <mat-icon>remove_red_eye</mat-icon>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            29 Aug 2018
+          </td>
+          <td>
+            234
+          </td>
+          <td>Rs. 102,399</td>
+          <td>Shipped</td>
+          <td>
+            <a mat-icon-button routerLink="/user-order-detail">
+              <mat-icon>remove_red_eye</mat-icon>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            29 Aug 2018
+          </td>
+          <td>
+            234
+          </td>
+          <td>Rs. 102,399</td>
+          <td>Shipped</td>
+          <td>
+            <a mat-icon-button routerLink="/user-order-detail">
+              <mat-icon>remove_red_eye</mat-icon>
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>
+</div>

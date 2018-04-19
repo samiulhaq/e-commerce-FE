@@ -13,12 +13,15 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserShippingAddressComponent } from './user-shipping-address/user-shipping-address.component';
+import { UserOrdersComponent } from './user-orders/user-orders.component';
+import { UserOrderDetailComponent } from './user-order-detail/user-order-detail.component';
 
 
 const routes: Routes = [
-  
- { 
-    path: '', 
+
+ {
+    path: '',
     component: SiteLayoutComponent,
     children: [
       { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -33,11 +36,15 @@ const routes: Routes = [
     ]
   },
 
-   { 
-    path: '', 
+   {
+    path: '',
     component: UserLayoutComponent,
     children: [
+      { path: '', component: UserProfileComponent, pathMatch: 'full'},
       { path: 'user-profile', component: UserProfileComponent },
+      { path: 'user-orders', component: UserOrdersComponent },
+      { path: 'user-order-detail', component: UserOrderDetailComponent },
+      { path: 'user-shipping-address', component: UserShippingAddressComponent },
     ]
   },
 

@@ -1,0 +1,34 @@
+.my-orders {
+  padding: 16px;
+}
+
+.my-orders table {
+  margin-top: 20px;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-orders table th {
+  font-weight: 800;
+}
+
+.my-orders table td, .my-orders table th {
+  border-bottom: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.my-orders h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .orders-data {
+    overflow: scroll;
+  }
+}
