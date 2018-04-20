@@ -1,3 +1,31 @@
-<p>
-  user-order-detail works!
-</p>
+<div class="user-order-details">
+
+  <div class="sectionOne" fxLayout="row" fxLayoutGap="20px">
+    <div fxFlex="100%">
+      <h1 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Order Details</span>
+      </h1>
+      <mat-card fxFlex="100%">Simple card</mat-card>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px">
+    <div fxFlex="50%" fxFlex.xs="100%">
+      <h1 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <mat-icon>local_shipping</mat-icon>
+        <span>Shipment Details</span>
+      </h1>
+      <mat-card>Simple card</mat-card>
+    </div>
+    <div fxFlex="50%" fxFlex.xs="100%">
+      <h1 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <mat-icon>payment</mat-icon>
+        <span>Payment Details</span>
+      </h1>
+      <mat-card>Simple card</mat-card>
+    </div>
+  </div>
+
+
+</div>
