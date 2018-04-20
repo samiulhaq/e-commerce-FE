@@ -12,3 +12,38 @@ h1 {
   font-family: roboto;
   font-size: 18px;
 }
+
+.orders-data table {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-data table th {
+  font-weight: 800;
+}
+
+.orders-data table td, .orders-data table th {
+  border-bottom: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  padding: 15px;
+  text-align: center;
+}
+
+small {
+  font-weight: normal;
+}
+
+.shipping-details {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .orders-data {
+    overflow: scroll;
+  }
+}
