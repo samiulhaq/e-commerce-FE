@@ -1,0 +1,22 @@
+.copy-rights {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.footer-links {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+
+
+.footer-links ul li {
+  list-style: none;
+}
