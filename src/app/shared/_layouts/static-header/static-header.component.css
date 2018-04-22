@@ -1,0 +1,14 @@
+.logo {
+  cursor: pointer;
+  outline: none;
+}
+
+.social-links {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.social-links a {
+  color: #fff;
+}

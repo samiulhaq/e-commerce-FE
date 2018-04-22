@@ -5,7 +5,7 @@ import { routerTransition } from '../router.animations';
   	selector: 'app-cart',
   	templateUrl: './cart.component.html',
   	styleUrls: ['./cart.component.css'],
-	animations: [routerTransition()],
+	  animations: [routerTransition()],
   	host: {'[@routerTransition]': ''}
 })
 

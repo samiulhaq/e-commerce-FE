@@ -1,4 +1,4 @@
-<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper" fxHide.xs>
+<mat-horizontal-stepper fxFlex="99.5" fxFlexOffset=".25" [linear]="isLinear" #stepper="matHorizontalStepper" fxHide.xs>
   <mat-step [stepControl]="firstFormGroup">
   <div class="step-container" fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25">
     <form [formGroup]="firstFormGroup">
@@ -67,7 +67,7 @@
 </mat-horizontal-stepper>
 
 
-<mat-vertical-stepper linear fxHide.gt-xs>
+<mat-vertical-stepper fxFlex="99.5" fxFlexOffset=".25" linear fxHide.gt-xs>
   <mat-step [stepControl]="firstFormGroup">
     <div class="step-container" fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25">
       <form [formGroup]="firstFormGroup">

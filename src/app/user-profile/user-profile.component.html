@@ -1,0 +1,37 @@
+<div class="profile-container" fxLayout="column" fxFlex="90" fxFlexOffset="5" fxFlex.gt-md="40" fxFlexOffset.gt-md="25">
+  <h1>Personal information</h1>
+  <mat-form-field>
+    <input matInput placeholder="First name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Last name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Gender">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Cell">
+  </mat-form-field>
+
+
+  <mat-form-field>
+    <input matInput placeholder="Enter your email" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Choose your password" [type]="showPassword ? 'password' : 'text'">
+    <mat-icon matSuffix (click)="showPassword = !showPassword">{{showPassword ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Re-enter your password" [type]="hide ? 'password' : 'text'">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+
+  <button mat-raised-button class="btn-login" color="primary">Update</button>
+
+</div>

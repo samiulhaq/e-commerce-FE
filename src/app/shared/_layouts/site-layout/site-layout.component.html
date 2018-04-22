@@ -1,0 +1,44 @@
+<app-site-header></app-site-header>
+
+<!--Desktop Navigation/SubNav Starts-->
+<app-nav></app-nav>
+<!--Desktop Navigation/SubNav Ends-->
+
+<!--Mobile sidenav trigger Starts-->
+<div class="hamburger" fxHide.gt-md="true">
+  <mat-toolbar>
+    <button mat-button (click)="sidenav.toggle()">
+      <i class="material-icons">menu</i> Menu
+    </button>
+  </mat-toolbar>
+</div>
+<!--Mobile sidenav trigger Ends--> 
+
+<mat-sidenav-container>
+
+  <!--Mobile sidenav Starts-->
+  <mat-sidenav #sidenav mode="push">
+
+    <!--mobile-nav back btn Starts-->
+    <div fxLayout="column">
+      <button mat-button class="mobile-nav-link back-btn" (click)="sidenav.close()">
+        <i class="material-icons">keyboard_arrow_left</i> Back
+      </button>
+    </div>
+    <!--mobile-nav back btn Ends-->
+
+    <!--mobile-nav Links Starts-->
+    <app-nav-mobile></app-nav-mobile>
+    <!--mobile-nav Links Ends-->
+
+  </mat-sidenav>
+  <!--Mobile sidenav Ends-->
+
+  <!--Main Pages content Show here for both web and desktop-->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <app-site-footer></app-site-footer>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
