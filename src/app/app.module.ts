@@ -34,6 +34,14 @@ import { UserNavComponent } from './shared/user-nav/user-nav.component';
 import { UserShippingAddressComponent } from './user-shipping-address/user-shipping-address.component';
 import { UserOrdersComponent } from './user-orders/user-orders.component';
 import { UserOrderDetailComponent } from './user-order-detail/user-order-detail.component';
+import { SizeChartComponent } from './static-pages/size-chart/size-chart.component';
+import { ShippingAndDeliveryComponent } from './static-pages/shipping-and-delivery/shipping-and-delivery.component';
+import { RefundPolicyComponent } from './static-pages/refund-policy/refund-policy.component';
+import { PrivacyPolicyComponent } from './static-pages/privacy-policy/privacy-policy.component';
+import { TermsOfUseComponent } from './static-pages/terms-of-use/terms-of-use.component';
+import { StaticLayoutComponent } from './shared/_layouts/static-layout/static-layout.component';
+import { StaticHeaderComponent } from './shared/_layouts/static-header/static-header.component';
+import { StaticFooterComponent } from './shared/_layouts/static-footer/static-footer.component';
 
 
 @NgModule({
@@ -60,7 +68,15 @@ import { UserOrderDetailComponent } from './user-order-detail/user-order-detail.
     UserNavComponent,
     UserShippingAddressComponent,
     UserOrdersComponent,
-    UserOrderDetailComponent
+    UserOrderDetailComponent,
+    SizeChartComponent,
+    ShippingAndDeliveryComponent,
+    RefundPolicyComponent,
+    PrivacyPolicyComponent,
+    TermsOfUseComponent,
+    StaticLayoutComponent,
+    StaticHeaderComponent,
+    StaticFooterComponent
   ],
   imports: [
     BrowserModule,

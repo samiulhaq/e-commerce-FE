@@ -1,3 +1,65 @@
 <footer>
-	<mat-toolbar>My App</mat-toolbar>	
+	<mat-toolbar fxLayout="row wrap" fxLayout.xs="column" fxFill fxLayoutAlign="space-around start" class="footer-links">
+    <div fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFill fxFlex.md='0 1 calc(50% - 20px)'s>
+      <ul>
+        <li class="heading">BestInPk</li>
+        <li><mat-divider></mat-divider></li>
+        <li>Head Office:</li>
+        <li>House 31, Street 45,</li>
+        <li>H8/2, Islamabad.</li>
+      </ul>
+    </div>
+    <div fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFill fxFlex.md='0 1 calc(50% - 20px)'>
+      <ul>
+        <li class="heading">Company</li>
+        <li><mat-divider></mat-divider></li>
+        <li>
+          <a routerLink="/size-chart" target="new">Size Chart</a>
+        </li>
+        <li>
+          <a routerLink="/shipping-and-delivery" target="new">Shipping / Delivery</a>
+        </li>
+        <li>
+          <a routerLink="/refund-policy" target="new">Refund Policy</a>
+        </li>
+        <li>
+          <a routerLink="/privacy-policy" target="new">Privacy Policy</a>
+        </li>
+        <li>
+          <a routerLink="/terms-of-use" target="new">Terms of Service</a>
+        </li>
+      </ul>
+    </div>
+    <div fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFill fxFlex.md='0 1 calc(50% - 20px)'>
+      <ul>
+        <li class="heading">Contact</li>
+        <li><mat-divider></mat-divider></li>
+        <li>BestInPk</li>
+        <li>Ph: 0302-515-9020</li>
+        <li>Email: hello@bestinpk.co</li>
+      </ul>
+    </div>
+    <div fxFlex='0 1 calc(25% - 20px)' fxFlex.sm='0 1 calc(50% - 20px)' fxFill fxFlex.md='0 1 calc(50% - 20px)'>
+      <ul>
+        <li class="heading">Social Media</li>
+        <li><mat-divider></mat-divider></li>
+        <li class="social-links no-margin">
+          <a href="" target="new"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li class="social-links">
+          <a href="" target="new"><i class="fa fa-google-plus-square"></i></a>
+        </li>
+        <li class="social-links">
+          <a href="" target="new"><i class="fa fa-twitter-square"></i></a>
+        </li>
+        <li class="social-links">
+          <a href="" target="new"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar>
+  <mat-divider></mat-divider>
+  <mat-toolbar>
+    <div fxLayout="row" fxFill fxLayoutAlign="space-around center" class="copy-rights">©2018 All rights reserved by BestInPk</div>
+  </mat-toolbar>
 </footer>
